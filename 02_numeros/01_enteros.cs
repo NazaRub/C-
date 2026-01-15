@@ -1,4 +1,11 @@
-int a = 18 ;
-int b = 6 ;
-int c = a + b ;
-Console.WriteLine(c) ;
+using System;
+{
+    static void Main()
+    {
+    int a = 18 ;
+     int b = 6 ;
+     int c = a + b ;
+     Console.WriteLine(c) ;
+    }
+}
+
