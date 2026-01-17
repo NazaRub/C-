@@ -14,4 +14,5 @@ int opcion = 0 ;
         distancia -= 1 ;
         distanciaRecorrido +=  1 ;
     }
+    
 }
