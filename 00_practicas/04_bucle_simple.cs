@@ -13,13 +13,23 @@ void BucleJuego()
         
            if (accion == 1)
            {
-            Console.WriteLine("Daño realizado!") ;
             vidaEnemigo = vidaEnemigo - ataqueJugador ;
+             Console.WriteLine($"Daño realizado!\n vida actual del enemigo:    {vidaEnemigo}") ;
            }
            if (vidaEnemigo > 0)
             {
              vidaJugador = vidaJugador - ataqueEnemigo ;
-             Console.WriteLine ($"El enemigo ataca!, recibes: {ataqueEnemigo} de dmg") ;
+             Console.WriteLine ($"El enemigo ataca!, recibes: {ataqueEnemigo} de dmg.\n----Tu vida actual: {vidaJugador}") ;
             }
-    } 
+            
+    }      
+     if (vidaEnemigo <= 0)
+            {
+            Console.WriteLine("Felicidades! derrotaste al enemigo") ;
+            }
+              else if (vidaJugador <= 0)
+            {
+            Console.WriteLine("Fuiste derrotado") ;
+            }
+             
 } 
