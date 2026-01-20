@@ -7,6 +7,9 @@ void BucleJuego()
     int ataqueEnemigo = 10 ;
     int accion = 0 ;
     int experiencia =0 ;
+   
+   while (vidaJugador > 0)
+  {
     while (vidaJugador > 0 && vidaEnemigo > 0)
     {
         Console.WriteLine("Es tu turno!\n1-Atacar");
@@ -21,6 +24,7 @@ void BucleJuego()
             {
              vidaJugador = vidaJugador - ataqueEnemigo ;
              Console.WriteLine ($"El enemigo ataca! DMG recibido: {ataqueEnemigo}\n----Tu vida actual: {vidaJugador}\n") ;
+             experiencia = experiencia + 50 ;
             }
 
             
@@ -34,4 +38,5 @@ void BucleJuego()
             Console.WriteLine("Fuiste derrotado") ;
             }
              
-} 
+  } 
+}
