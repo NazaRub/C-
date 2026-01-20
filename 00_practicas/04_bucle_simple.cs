@@ -14,12 +14,12 @@ void BucleJuego()
            if (accion == 1)
            {
             vidaEnemigo = vidaEnemigo - ataqueJugador ;
-             Console.WriteLine($"Daño realizado!\n vida actual del enemigo:    {vidaEnemigo}") ;
+             Console.WriteLine($"Daño realizado!\nVida actual del enemigo:   {vidaEnemigo}\n") ;
            }
            if (vidaEnemigo > 0)
             {
              vidaJugador = vidaJugador - ataqueEnemigo ;
-             Console.WriteLine ($"El enemigo ataca!, recibes: {ataqueEnemigo} de dmg.\n----Tu vida actual: {vidaJugador}") ;
+             Console.WriteLine ($"El enemigo ataca! DMG recibido: {ataqueEnemigo}\n----Tu vida actual: {vidaJugador}\n") ;
             }
             
     }      
