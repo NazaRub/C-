@@ -21,4 +21,3 @@ if ((puerta == true) && (path == caminoCorrecto))
         Console.WriteLine("Felicidades! abriste la puerta") ;
     }
 }
-
